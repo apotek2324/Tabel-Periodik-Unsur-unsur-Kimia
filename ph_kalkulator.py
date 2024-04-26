@@ -1,5 +1,3 @@
-st.header('KALKULATOR pH', divider='blue')
-
 senyawa_asam_kuat = st.selectbox(
     "Masukkan senyawa asam",
     ("Asam Nitrat-HNO3","Asam Klorida-HCl","Asam Sulfat-H2SO4","Asam Iodida-HI","Asam Flourida-HF"),
