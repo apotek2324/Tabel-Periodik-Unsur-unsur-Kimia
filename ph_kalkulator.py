@@ -7,7 +7,7 @@ senyawa_asam_kuat = st.selectbox(
 st.write('Anda memilih:', option)
 
 senyawa_basa_kuat = st.selectbox(
-    "Masukkan senyawa basa"
+    "Masukkan senyawa basa",
     ("Kalium Hidroksida-KOH","Natrium Hidroksida-NaOH","Litium Hidroksida-LiOH","Kalsium Hidroksida-Ca(OH)2"),
     index=None,
     placeholder="Pilih senyawa...",)
