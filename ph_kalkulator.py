@@ -4,7 +4,7 @@ st.title('Kalkulator pH Larutan')
 
 Kategori_Larutan = st.selectbox(
     "Pilih kategori larutan",
-    ("Asam kuat","Asam lemah","Basa kuat","Basa lemah"),
+    ("Konsentrasi Asam","Konsentrasi Basa","Massa dan Volume Asam","Massa dan Volume Basa"),
     index=None,
     placeholder="Pilih kategori larutan...",)
 st.write('Anda memilih:', Kategori_Larutan)
