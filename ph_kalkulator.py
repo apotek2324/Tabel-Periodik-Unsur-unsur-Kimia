@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.title('blue:[Kalkulator pH Larutan]')
+st.title('Kalkulator pH Larutan:blue')
 
 Kategori_Larutan = st.selectbox(
     "Pilih kategori larutan",
