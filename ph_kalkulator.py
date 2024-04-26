@@ -1,5 +1,7 @@
 import streamlit as st
 
+st.title('blue:[Kalkulator pH Larutan]')
+
 Kategori_Larutan = st.selectbox(
     "Pilih kategori larutan",
     ("Asam kuat","Asam lemah","Basa kuat","Basa lemah"),
