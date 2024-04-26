@@ -1,16 +1,5 @@
 import streamlit as st
 
-your-repository/
-├── pages/
-│   ├── Kalkulator_pH.py
-│   ├── senyawa_asam_kuat.py
-│   └── senyawa_basa_kuat.py
-└── Kalkulator_pH.py
-
-st.page_link("Kalkulator_pH.py", label="Home")
-st.page_link("pages/Senyawa_Asam_Kuat.py", label="Asam Kuat")
-st.page_link("pages/Senyawa_Basa_Kuat.py", label="Basa Kuat")
-
 senyawa_asam_kuat = st.selectbox(
     "Masukkan senyawa asam",
     ("Asam Nitrat-HNO3","Asam Klorida-HCl","Asam Sulfat-H2SO4","Asam Iodida-HI","Asam Flourida-HF"),
