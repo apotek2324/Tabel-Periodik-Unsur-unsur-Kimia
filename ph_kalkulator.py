@@ -5,7 +5,9 @@ st.title('Kalkulator pH Larutan')
 your-repository/
 ├── pages/
 │   ├── Asam_Kuat_dan_Basa_Kuat.py
-│   └── Asam_Kuat_dan_Basa_Kuat.py
+│   ├── Asam_Kuat_dan_Basa_Lemah.py
+│   ├── Asam_Lemah_dan_Basa_Kuat.py
+│   └── Asam_Lemah_dan_Basa_Lemah.py
 └── Kalkulator_pH_Campuran.py
 
 Kategori_Larutan = st.selectbox(
