@@ -22,8 +22,3 @@ senyawa_basa_kuat = st.selectbox(
 st.write('Anda memilih:', senyawa_basa_kuat)
 
 Masukkan_Konsentrasi = st.text_input('Masukkan Konsentrasi')
-
-
-
-    
-
