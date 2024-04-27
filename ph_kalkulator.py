@@ -2,17 +2,12 @@ import streamlit as st
 
 st.title('Kalkulator pH Larutan')
 
-if st.button("Utama"):
-    st.switch_page("your_app.py")
     Kategori_Larutan = st.selectbox(
     "Pilih kategori larutan",
     ("Asam Kuat dan Basa Kuat","Konsentrasi Basa","Massa dan Volume Asam","Massa dan Volume Basa"),
     index=None,
     placeholder="Pilih kategori larutan...",)
 st.write('Anda memilih:', Kategori_Larutan)
-
-if st.button("Pilih Larutan yang Ingin di Cek pH-nya"):
-    st.switch_page("pages/page_1.py")
 
 senyawa_asam_kuat = st.selectbox(
     "Masukkan senyawa asam",
