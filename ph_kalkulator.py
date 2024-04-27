@@ -4,7 +4,8 @@ from streamlit_option_menu import option_menu
 # navigasi sidebar
 with st.sidebar:
     selected = option_menu("Perhitungan pH Larutan", ['Menghitung dengan Konsentrasi', 'Menghitung dengan Massa dan Volume'], 
-    default_index=0)
+    default_index=1)
+    selected
 
 # halaman perhitungan pH
 if (selected == 'Menghitung dengan Konsentrasi') :
