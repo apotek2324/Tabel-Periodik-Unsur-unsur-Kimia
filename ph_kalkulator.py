@@ -1,5 +1,14 @@
 import streamlit as st
 
+st.title('Kalkulator pH Larutan')
+    
+Kategori_Larutan = st.selectbox(
+    "Pilih kategori larutan",
+    ("Asam Kuat dan Basa Kuat","Konsentrasi Basa","Massa dan Volume Asam","Massa dan Volume Basa"),
+    index=None,
+    placeholder="Pilih kategori larutan...",)
+st.write('Anda memilih:', Kategori_Larutan)
+
 senyawa_asam_kuat = st.selectbox(
     "Masukkan senyawa asam",
     ("Asam Nitrat-HNO3","Asam Klorida-HCl","Asam Sulfat-H2SO4","Asam Iodida-HI","Asam Flourida-HF"),
@@ -15,6 +24,7 @@ senyawa_basa_kuat = st.selectbox(
 st.write('Anda memilih:', senyawa_basa_kuat)
 
 Masukkan_Konsentrasi = st.text_input('Masukkan Konsentrasi')
+
 
 
     
