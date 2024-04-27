@@ -1,17 +1,20 @@
 import streamlit as st
-from streamlit_option_menu import option_menu
 
-# navigasi sidebar
-with st.sidebar:
-    selected = option_menu(
-        menu_title = "Perhitungan pH Larutan", #required 
-        options =["Menghitung dengan Konsentrasi", "Menghitung dengan Massa dan Volume"], #required 
-    )
+senyawa_asam_kuat = st.selectbox(
+    "Masukkan senyawa asam",
+    ("Asam Nitrat-HNO3","Asam Klorida-HCl","Asam Sulfat-H2SO4","Asam Iodida-HI","Asam Flourida-HF"),
+    index=None,
+    placeholder="Pilih senyawa...",)
+st.write('Anda memilih:', senyawa_asam_kuat)
 
-if (selected == "Menghitung dengan Konsentrasi") :
-    st.title(f"Kalkulator pH Larutan {selected}")
-if (selected == "Menghitung dengan Massa dan Volume") :
-    st.title(f"Kalkulator Larutan {selected}")
+senyawa_basa_kuat = st.selectbox(
+    "Masukkan senyawa basa",
+    ("Kalium Hidroksida-KOH","Natrium Hidroksida-NaOH","Litium Hidroksida-LiOH","Kalsium Hidroksida-Ca(OH)2"),
+    index=None,
+    placeholder="Pilih senyawa...",)
+st.write('Anda memilih:', senyawa_basa_kuat)
+
+Masukkan_Konsentrasi = st.text_input('Masukkan Konsentrasi')
 
 
     
