@@ -23,5 +23,5 @@ senyawa_basa_kuat = st.selectbox(
     placeholder="Pilih senyawa...",)
 st.write('Anda memilih:', senyawa_basa_kuat)
 
-title = st.text_input('Masukkan Konsentrasi', '')
-st.write('', title)
+Masukkan_Konsentrasi = st.text_input('Masukkan Konsentrasi', '')
+st.write('', Masukkan_Konsentrasi)
