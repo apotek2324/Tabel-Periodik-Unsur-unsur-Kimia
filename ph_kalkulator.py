@@ -2,12 +2,11 @@ import streamlit as st
 
 st.title('Kalkulator pH Larutan')
 
-if st.button("Home"):
+if st.button("utama"):
     st.switch_page("your_app.py")
-if st.button("Page 1"):
+if st.button("Pilih Larutan yang Ingin di Cek pH-nya"):
     st.switch_page("pages/page_1.py")
-if st.button("Page 2"):
-    st.switch_page("pages/page_2.py")
+
     
 Kategori_Larutan = st.selectbox(
     "Pilih kategori larutan",
