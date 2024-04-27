@@ -3,7 +3,7 @@ import streamlit as st
 st.title('Kalkulator pH Larutan')
 
 your-repository/
-├pages/
+├──pages/
 │   ├── Asam_Kuat_dan_Basa_Kuat.py
 │   ├── Asam_Kuat_dan_Basa_Lemah.py
 │   ├── Asam_Lemah_dan_Basa_Kuat.py
