@@ -13,6 +13,6 @@ if hitung:
     asam = konsentrasi * valensi
     st.write('Hasil = ', asam)
     pH = math.log10(asam)
-    st.write('Hasil = ', pH)
+    st.success(f'pH = ', pH)
    
 
