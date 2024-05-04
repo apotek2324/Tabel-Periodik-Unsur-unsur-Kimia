@@ -8,8 +8,8 @@ hitung = st.button('Hitung pH')
 
 if hitung:
     asam = konsentrasi * valensi
-    st.write('Hasil = ', H)
-    st.success(f'Hasil = {H}')
+    st.write('Hasil = ', asam)
+    st.success(f'Hasil = {asam}')
 
 
 
