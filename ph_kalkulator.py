@@ -7,7 +7,7 @@ valensi = st.text_input('Masukkan Valensi', 0)
 hitung = st.button('Hitung pH')
 
 if hitung:
-    H = konsentrasi * valensi
+    asam = konsentrasi * valensi
     st.write('Hasil = ', H)
     st.success(f'Hasil = {H}')
 
