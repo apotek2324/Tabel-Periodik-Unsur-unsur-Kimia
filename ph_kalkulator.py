@@ -11,10 +11,10 @@ hitung = st.button('Hitung pH')
 
 if hitung:
     asam = konsentrasi * valensi
-    st.write('Hasil = ', asam)
+    st.write('[H+] = ', asam)
     log = math.log10(asam)
     pH = log * -1
-    st.success(f'Hasil = {pH}')
+    st.success(f'pH = {pH}')
 
    
 
