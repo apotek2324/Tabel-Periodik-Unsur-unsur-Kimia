@@ -1,4 +1,5 @@
 import streamlit as st
+import math
 
 st.title('Kalkulator pH Larutan')
 
@@ -12,6 +13,7 @@ if hitung:
     st.success(f'Hasil = {asam}')
     pH = log10(asam)
     st.write('Hasil = ', pH)
+print('log (fabs(x), base) is :',math.log(math.fabs(asam),10))
 
 
 
