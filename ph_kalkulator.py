@@ -8,6 +8,8 @@ hitung = st.button('Hitung pH')
 
 if hitung:
     H = konsentrasi * valensi
+    st.write('Hasil = ', H)
+    st.success(f'Hasil = {H}')
 
 
 
