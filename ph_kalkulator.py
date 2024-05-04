@@ -14,7 +14,8 @@ if hitung:
     st.write('[H+] = ', asam)
     log = math.log10(asam)
     pH = log * -1
-    st.success(f'pH = {pH}')
+    st.write('pH = ', asam)
+    st.success(f'pH Asam adalah {pH}')
 
    
 
