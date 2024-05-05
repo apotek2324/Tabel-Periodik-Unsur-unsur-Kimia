@@ -15,8 +15,8 @@ if hitung:
     log = math.log10(basa)
     pOH = log * -1
     pH = 14-pOH
-    st.write('pH = ', pH)
-    st.success(f'pH Asam adalah {pH:.2f}')
+    st.write('pOH = ', pOH)
+    st.success(f'pH Basa adalah {pH:.2f}')
 
    
 
