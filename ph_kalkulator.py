@@ -4,6 +4,8 @@ import math
 
 st.title('Kalkulator pH Larutan')
 
+col1, col2, = st.columns(2)
+
 with col1 :
 konsentrasi = st.number_input('Masukkan Konsentrasi') 
 st.write("Konsentrasi = ", konsentrasi)
