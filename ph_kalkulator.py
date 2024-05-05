@@ -3,7 +3,7 @@ import math
 
 st.title('Kalkulator pH Larutan')
 
-konsentrasi = st.number_input('Masukkan Konsentrasi', 0.000)
+konsentrasi = st.number_input('Masukkan Konsentrasi', 0,000)
 st.write("Konsentrasi = ", konsentrasi)
 valensi = st.number_input('Masukkan Valensi', 0)
 st.write("a = ", valensi)
