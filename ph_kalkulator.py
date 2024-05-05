@@ -3,16 +3,17 @@ import math
 
 st.title('Kalkulator pH Larutan')
 
-konsentrasi = st.number_input('Masukkan Konsentrasi')
-st.write("Konsentrasi = ", konsentrasi)
+konsentrasi = st.number_input('Masukkan Ka')
+st.write("Ka = ", konsentrasi)
 valensi = st.number_input('Masukkan Valensi', 0)
-st.write("Valensi = ", valensi)
+st.write("a = ", valensi)
 hitung = st.button('Hitung pH')
 
 if hitung:
     basa = konsentrasi * valensi
-    st.write('[OH-] = ', basa)
-    log = math.log10(basa)
+    akar = basa ** 0.5
+    st.write('[OH-] = ', akar)
+    log = math.log10(akar)
     pOH = log * -1
     pH = 14-pOH
     st.write('pOH = ', pOH)
