@@ -1,23 +1,16 @@
-#asam kuat
 import streamlit as st
 import math
 
 st.title('Kalkulator pH Larutan')
 
-senyawa = st.selectbox(
-    "Masukkan senyawa asam",
-    ("Asam Nitrat-HNO3","Asam Klorida-HCl","Asam Sulfat-H2SO4"),
-    index = '1','1','2'
-    placeholder="Pilih senyawa...",)
-
-st.write('Anda memilih:', senyawa_asam_kuat)
-konsentrasi = st.number_input('Masukkan Konsentrasi') 
+konsentrasi = st.number_input('Masukkan Konsentrasi')
 st.write("Konsentrasi = ", konsentrasi)
-
+valensi = st.number_input('Masukkan Valensi', 0)
+st.write("a = ", valensi)
 hitung = st.button('Hitung pH')
 
 if hitung:
-    asam = konsentrasi * index
+    asam = konsentrasi * valensi
     st.write('[H+] = ', asam)
     log = math.log10(asam)
     pH = log * -1
