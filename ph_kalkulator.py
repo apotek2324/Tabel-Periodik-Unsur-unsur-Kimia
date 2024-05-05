@@ -10,10 +10,11 @@ st.write("Valensi = ", valensi)
 hitung = st.button('Hitung pH')
 
 if hitung:
-    asam = konsentrasi * valensi
-    st.write('[H+] = ', asam)
-    log = math.log10(asam)
-    pH = log * -1
+    basa = konsentrasi * valensi
+    st.write('[OH-] = ', basa)
+    log = math.log10(basa)
+    pOH = log * -1
+    pH = 14-pOH
     st.write('pH = ', pH)
     st.success(f'pH Asam adalah {pH:.2f}')
 
