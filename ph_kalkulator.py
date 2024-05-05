@@ -4,10 +4,16 @@ import math
 
 st.title('Kalkulator pH Larutan')
 
-konsentrasi = st.number_input('Masukkan Konsentrasi') option = st.selectbox(
-    "How would you like to be contacted?",
-    ("Email", "Home phone", "Mobile phone"))
+with col1 :
+konsentrasi = st.number_input('Masukkan Konsentrasi') 
 st.write("Konsentrasi = ", konsentrasi)
+
+with col2 :
+option = st.selectbox(
+    " ",
+    ("mL", "L"))
+
+with col1 :
 valensi = st.number_input('Masukkan Valensi', 0)
 st.write("a = ", valensi)
 hitung = st.button('Hitung pH')
