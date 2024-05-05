@@ -19,11 +19,6 @@ if hitung:
     st.success(f'pH Asam adalah {pH:.2f}')
 
 #asam lemah
-import streamlit as st
-import math
-
-st.title('Kalkulator pH Larutan')
-
 konsentrasi = st.number_input('Masukkan Ka')
 st.write("Ka = ", konsentrasi)
 valensi = st.number_input('Masukkan Valensi', 0)
@@ -40,11 +35,6 @@ if hitung:
     st.success(f'pH Asam adalah {pH:.2f}')
 
 #basa kuat
-import streamlit as st
-import math
-
-st.title('Kalkulator pH Larutan')
-
 konsentrasi = st.number_input('Masukkan Konsentrasi')
 st.write("Konsentrasi = ", konsentrasi)
 valensi = st.number_input('Masukkan Valensi', 0)
@@ -61,11 +51,6 @@ if hitung:
     st.success(f'pH Basa adalah {pH:.2f}')
 
 #basa lemah
-import streamlit as st
-import math
-
-st.title('Kalkulator pH Larutan')
-
 konsentrasi = st.number_input('Masukkan Ka')
 st.write("Ka = ", konsentrasi)
 valensi = st.number_input('Masukkan Valensi', 0)
@@ -81,6 +66,3 @@ if hitung:
     pH = 14-pOH
     st.write('pOH = ', pOH)
     st.success(f'pH Basa adalah {pH:.2f}')
-
-   
-
