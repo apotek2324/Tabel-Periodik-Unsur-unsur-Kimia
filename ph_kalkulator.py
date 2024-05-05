@@ -4,24 +4,20 @@ import math
 
 st.title('Kalkulator pH Larutan')
 
-col1, col2 = st.columns(2)
+senyawa = st.selectbox(
+    "Masukkan senyawa asam",
+    ("Asam Nitrat-HNO3","Asam Klorida-HCl","Asam Sulfat-H2SO4"),
+    index='1','1','2'
+    placeholder="Pilih senyawa...",)
 
-with col1 :
+st.write('Anda memilih:', senyawa_asam_kuat)
 konsentrasi = st.number_input('Masukkan Konsentrasi') 
 st.write("Konsentrasi = ", konsentrasi)
 
-with col2 :
-option = st.selectbox(
-    " ",
-    ("mL", "L"))
-
-with col1 :
-valensi = st.number_input('Masukkan Valensi', 0)
-st.write("a = ", valensi)
 hitung = st.button('Hitung pH')
 
 if hitung:
-    asam = konsentrasi * valensi
+    asam = konsentrasi * index
     st.write('[H+] = ', asam)
     log = math.log10(asam)
     pH = log * -1
