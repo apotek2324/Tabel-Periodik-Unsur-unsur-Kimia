@@ -7,7 +7,7 @@ st.title('Kalkulator pH Larutan')
 senyawa = st.selectbox(
     "Masukkan senyawa asam",
     ("Asam Nitrat-HNO3","Asam Klorida-HCl","Asam Sulfat-H2SO4"),
-    index='1','1','2'
+    senyawa [0, 1, 2] ='1','1','2'
     placeholder="Pilih senyawa...",)
 
 st.write('Anda memilih:', senyawa_asam_kuat)
